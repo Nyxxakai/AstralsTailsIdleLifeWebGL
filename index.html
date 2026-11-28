@@ -11,9 +11,9 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Astralis Tails">
     <!-- Tools/publish-build.sh replaces this token with a hash of the payloads, so a bug report names its build. -->
-    <meta name="astra-build" content="11cb870dab0a">
+    <meta name="astra-build" content="002ade5d7b35">
     <!-- Readable version of the same thing, for a player wondering whether the phone picked up the new build. -->
-    <meta name="astra-build-label" content="ui-rework-3.0 build 303.030">
+    <meta name="astra-build-label" content="ui-rework-3.0 build 308.031">
     <title>Astralis Tails</title>
     <link rel="icon" href="TemplateData/icon.jpg">
     <link rel="apple-touch-icon" href="TemplateData/icon.jpg">
@@ -48,7 +48,7 @@
       var warningBanner = document.querySelector("#unity-warning");
 
       // Publish writes the branch and build number into the meta tag above; a build straight from the editor still has
-      // the token, and a token is not a build name, so the card shows nothing rather than "ui-rework-3.0 build 303.030".
+      // the token, and a token is not a build name, so the card shows nothing rather than "ui-rework-3.0 build 308.031".
       var labelText = (document.querySelector('meta[name="astra-build-label"]') || {}).content || "";
       if (labelText.indexOf("__ASTRA") === 0 || !labelText) {
         buildLabel.style.display = "none";
