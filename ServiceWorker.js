@@ -5,7 +5,7 @@
    so a new build arrives as a new cache: activation deletes the old one. Without the stamp a stale cache would keep
    serving last week's wasm against this week's data file, which is worse than a download. */
 
-const BUILD = "dacc16dfa9e4";
+const BUILD = "11cb870dab0a";
 // The 2 is the cache scheme, not the build: a cache can have been filled with one build's page and another build's
 // wasm while Pages was rolling over, and that device is stuck forever if the name it would look for never changes.
 const CACHE = "astralis-tails-2-" + BUILD;
